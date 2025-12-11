@@ -80,15 +80,17 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
-USERNAME = os.getenv('DB_USERNAME')
-PASSWORD = os.getenv('DB_PASSWORD')
-HOST = os.getenv('DB_HOST')
-PORT = os.getenv('DB_PORT')
-DATABASE = os.getenv('DB_NAME')
+# USERNAME = os.getenv('DB_USERNAME')
+# PASSWORD = os.getenv('DB_PASSWORD')
+# HOST = os.getenv('DB_HOST')
+# PORT = os.getenv('DB_PORT')
+# DATABASE = os.getenv('DB_NAME')
+
+DB_URL = os.getenv('DB_URL')
 
 DATABASES = {
     'default': dj_database_url.parse(
-        f"postgresql://{USERNAME}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}",
+        DB_URL,
         conn_max_age=600,
         ssl_require=True
     )
