@@ -1,3 +1,78 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Urbanist", sans-serif; */
+}
+
+body {
+  background-color: #eff3ff;
+  overflow-x: hidden;
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav {
+  width: 100%;
+  background-color: 	#1a284d;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.nav-items {
+  /* list-style: none; */
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.content-container{
+  margin: 2rem auto;
+  height: 100vh;
+}
+
+.custom-table .ant-table-thead > tr > th {
+  background-color: #111d3a;
+  color: #fff;
+}
+
+.custom-card-head .ant-card-head{
+  background-color: #111d3a;
+  color: #fff;
+}
+
+.custom-card-head .ant-tabs-tab-btn{
+  color: white;
+  font-weight: 700;
+}
+
+
+.footer{
+  display: flex;
+  padding: 12px 20px;
+  background-color: 	#1a284d;
+  color: white;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+

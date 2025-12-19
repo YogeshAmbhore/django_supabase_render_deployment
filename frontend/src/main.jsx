@@ -4,10 +4,18 @@ import { BrowserRouter } from "react-router-dom";
 import "./index.css";
 import App from "./App.jsx";
 
+// OLD METHOD
+// createRoot(document.getElementById("root")).render(
+//   <StrictMode>
+//     <BrowserRouter>
+//       <App />
+//     </BrowserRouter>
+//   </StrictMode>
+// );
+
+// NEW METHOD
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <App />
   </StrictMode>
 );
