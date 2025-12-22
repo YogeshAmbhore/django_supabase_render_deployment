@@ -3,18 +3,15 @@ import { Header } from "./Header";
 import { Footer } from "./Footer";
 
 export const AppLayout = () => {
-  //   const navigation = useNavigation();
-
   return (
-    <>
+    <div className="app-root">
       <Header />
-      <div className="container">
-        <div className="content-container">
-          <Outlet />
-        </div>
-      </div>
+
+      <main className="container content-container">
+        <Outlet />
+      </main>
 
       <Footer />
-    </>
+    </div>
   );
 };

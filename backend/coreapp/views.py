@@ -16,7 +16,7 @@ class AuthorListCreateAPIView(APIView):
     def get(self, request):
         try:
             logger.info("Fetching all authors")
-            authors = Author.objects.filter(is_active=True)
+            authors = Author.objects.filter(is_active=True).order_by("id")
             if not authors:
                 return Response(
                     {

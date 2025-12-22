@@ -14,7 +14,13 @@ body {
   overflow-x: hidden;
 }
 
-.container{
+.app-root {
+  min-height: 100vh;        /* full screen */
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
   width: 90%;
   margin: 0 auto;
 }
@@ -45,9 +51,9 @@ body {
   padding: 0;
 }
 
-.content-container{
+.content-container {
+  flex: 1;                  /* 👈 takes remaining space */
   margin: 2rem auto;
-  height: 100vh;
 }
 
 .custom-table .ant-table-thead > tr > th {
@@ -63,6 +69,25 @@ body {
 .custom-card-head .ant-tabs-tab-btn{
   color: white;
   font-weight: 700;
+}
+
+.edit-author-card .ant-card-head {
+  background-color: #111d3a;
+  color: #fff;
+}
+
+.edit-author-card .ant-card-head-title {
+  color: #fff;
+}
+
+.edit-author-card .ant-card-extra {
+  color: #fff;
+}
+
+.edit-author-card .ant-card-extra button {
+  background: #fff;
+  color: #111d3a;
+  border: none;
 }
 
 

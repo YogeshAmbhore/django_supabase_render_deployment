@@ -7,7 +7,8 @@ import {
 import { AuthorsData } from "../components/AuthorsData";
 import { AppLayout } from "../layout/AppLayout";
 import AuthorDetails from "../components/AuthorDetails";
-import { EditAuthor } from "../components/EditAuthor";
+// import { EditAuthor } from "../components/EditAuthor";
+import { EditAuthorTwo } from "../components/EditAuthorTwo";
 
 // OLD METHOD OF ROUTING
 // export const AppRoutes = () => {
@@ -35,7 +36,7 @@ export const AppRoutes = () => {
         },
         {
           path: "authors/:id/edit",
-          element: <EditAuthor />,
+          element: <EditAuthorTwo />,
         },
       ],
     },
